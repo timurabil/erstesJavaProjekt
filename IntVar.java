@@ -59,9 +59,37 @@ public final class IntVar {
 			case "%":
 				System.out.printf("%d % %d ist %d%n", z1, z2, z1 % z2);
 				break;
-		}
-	}
+			case "==":
+				System.out.printf("%d == %d iist %b%n", z1, z2, z1 == z2);
 
-}
+				break;
+			case "!=":
+			System.out.printf("%d != %d ist %b%n",
+					z1, z2, z1 != z2);
+			break;
+			case "<":
+				System.out.printf("d < %d ist %b%n",
+						z1, z2, z1 < z2);
+				break;
+			case "<=":
+				System.out.printf("%d <= %d ist %b%n",
+						z1, z2, z1 <= z2);
+				break;
+			case ">":
+				System.out.printf("%d > %d ist %b%n",
+						z1, z2, z1 > z2);
+				break;
+			case ">=":
+				System.out.printf("%d >= %d ist %b%n",
+						z1, z2, z1 >= z2);
+				break;
+			default:
+				System.out.println("Ungueltiger Operator!");
+	    }
+
+    } else {
+    	System.out.println("Keine Berechnung aufgrund ungueltiiiger Eingabe!");
+    }
+    }
 }
 	
